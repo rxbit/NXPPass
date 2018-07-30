@@ -6,33 +6,26 @@
 
 #import <UIKit/UIKit.h>
 
-%hook ClassName
+%hook NXPDevice
 
-+ (id)sharedInstance
++ (NSString *)mobileCountryCode
 {
-	%log;
-
-	return %orig;
+    return @"454";
 }
 
-- (void)messageWithNoReturnAndOneArgument:(id)originalArgument
++ (NSString *)mobileNetworkCode
 {
-	%log;
-
-	%orig(originalArgument);
-	
-	// or, for exmaple, you could use a custom value instead of the original argument: %orig(customValue);
+    return @"20";
 }
 
-- (id)messageWithReturnAndNoArguments
++ (NSString *)locatedCountryCode
 {
-	%log;
+    return @"HK";
+}
 
-	id originalReturnOfMessage = %orig;
-	
-	// for example, you could modify the original return value before returning it: [SomeOtherClass doSomethingToThisObject:originalReturnOfMessage];
-
-	return originalReturnOfMessage;
++ (NSString *)preferredCountryCode
+{
+    return @"HK";
 }
 
 %end

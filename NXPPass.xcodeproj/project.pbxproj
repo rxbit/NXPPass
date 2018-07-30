@@ -306,7 +306,7 @@
 				MonkeyDevCopyOnBuild = NO;
 				MonkeyDevDeviceIP = "";
 				MonkeyDevDevicePassword = "";
-				MonkeyDevDevicePort = "";
+				MonkeyDevDevicePort = 2222;
 				MonkeyDevInstallOnAnyBuild = YES;
 				MonkeyDevInstallOnProfiling = YES;
 				MonkeyDevkillProcessOnInstall = SpringBoard;
@@ -332,7 +332,7 @@
 				MonkeyDevCopyOnBuild = NO;
 				MonkeyDevDeviceIP = "";
 				MonkeyDevDevicePassword = "";
-				MonkeyDevDevicePort = "";
+				MonkeyDevDevicePort = 2222;
 				MonkeyDevInstallOnAnyBuild = YES;
 				MonkeyDevInstallOnProfiling = YES;
 				MonkeyDevkillProcessOnInstall = SpringBoard;
